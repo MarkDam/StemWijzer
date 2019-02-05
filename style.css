@@ -1,0 +1,37 @@
+body {
+  background-image: url("Tweede_Kamer_2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main {
+  background-color: white;
+  position: relative;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 100px;
+  height: 470px;
+  width: 1000px;
+}
+
+h1 {
+  position: absolute;
+  margin: 50px;
+  margin-left: 90px;
+  font-size: 60px;
+}
+
+h2 {
+  position: absolute;
+  top: 130px;
+  left: 110px;
+}
+
+.startButton {
+  position: absolute;
+  top: 340px;
+  left: 41%;
+  width: 130px;
+  height: 70px;
+  font-size: 30px;
+}
