@@ -35,3 +35,30 @@ h2 {
   height: 70px;
   font-size: 30px;
 }
+
+.voteButtons {
+  position: relative;
+  top: 290px;
+  left: 320px;
+  width: 400px;
+}
+.voteButton {
+  font-size: 20px;
+  margin: 5px;
+}
+
+#homeButton {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 20px;
+  height: 35px;
+}
+
+#reverseButton {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 20px;
+  height: 35px;
+}
