@@ -352,7 +352,7 @@ var subjects =
 
 var parties = [
 	{name: "VVD", secular: true, size: 33, long: "Volkspartij voor Vrijheid en Democratie"},
-	{name: "CDA", secular: false, size: 19, long: "Christen Democratisch Appel"},
+	{name: "CDA", secular: false, size: 19, long: "Christen Democratisch Appél"},
 	{name: "PVV", secular: true, size: 20, long: "Partij voor de Vrijheid"},
 	{name: "D66", secular: true, size: 19, long: "Democratie 66"},
 	{name: "GroenLinks", secular: true, size: 14},
