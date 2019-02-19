@@ -40,11 +40,15 @@ function endScreen() {
 			document.getElementById('title').innerHTML = "Uw partijen zijn:";
 			document.getElementById('voteButtons').style.visibility = "hidden";
 			document.getElementById('statement').style.visibility = "hidden";
-
+			var mainId = document.getElementsByClassName('main');
+			mainId[0].style.height = "700px";
+//			var bigParties = document.createElement('BUTTON');
+//			document.body.appendChild(bigParties);
+//			bigParties.id = "bigPartiesButton";
 			for (let i = 0; i < parties.length; i++) {
-				var party = document.createElement('li');
-				party.innerText = parties[i].name;
-				list.appendChild(party);
+				var partiesList = document.createElement('li');
+				partiesList.innerText = parties[i].name;
+				list.appendChild(partiesList);
 //				console.log(parties[i].name);
 			}
 		}
@@ -70,74 +74,73 @@ function goBack() {
 parties.forEach(function(element){
 	document.getElementById('statement').innnerHTML = element;
 });
+
 */
-/*
-results = {
-		"VVD" {
-			score = 0
-		},
-		"CDA" {
-			score = 0
-		},
-		"PVV" {
-			score = 0
-		},
-		"D66" {
-			score = 0
-		},
-		"GroenLinks" {
-			score = 0
-		},
-		"SP" {
-			score = 0
-		},
-		"PvdA" {
-			score = 0
-		},
-		"ChristenUnie" {
-			score = 0
-		},
-		"Partij voor de Dieren" {
-			score = 0
-		},
-		"SGP" {
-			score = 0
-		},
-		"DENK" {
-			score = 0
-		},
-		"Forum voor Democratie" {
-			score = 0
-		},
-		"Lokaal in de kamer" {
-			score = 0
-		},
-		"OndernemersPartij" {
-			score = 0
-		},
-		"VNL" {
-			score = 0
-		},
-		"Nieuwe Wegen" {
-			score = 0
-		},
-		"De Burger Beweging" {
-			score = 0
-		},
-		"Piratenpartij" {
-			score = 0
-		},
-		"Artikel 1" {
-			score = 0
-		},
-		"50Plus" {
-			score = 0
-		},
-		"Vrijzinnige Partij" {
-			score = 0
-		},
-		"Libertarische Partij" {
-			score = 0
-		}
-}
-*/
+
+var results = [{
+	name: "VVD",
+	score: 0
+	}, {
+	name: "CDA",
+	score: 0
+	}, {
+	name: "PVV",
+	score: 0
+	}, {
+	name: "D66",
+	score: 0
+	}, {
+	name: "GroenLinks",
+	score: 0
+	}, {
+	name: "SP",
+	score: 0
+	}, {
+	name: "PvdA",
+	score: 0
+  }, {
+	name: "ChristenUnie",
+	score: 0
+	}, {
+	name: "Partij voor de Dieren",
+	score: 0
+	}, {
+	name: "SGP",
+	score: 0
+  }, {
+	name: "DENK",
+	score: 0
+  }, {
+	name: "Forum voor Democratie",
+	score: 0
+  }, {
+	name: "Lokaal in de kamer",
+	score: 0
+	}, {
+	name: "OndernemersPartij",
+	score: 0
+  }, {
+	name: "VNL",
+	score: 0
+  }, {
+	name: "Nieuwe Wegen",
+	score: 0
+  }, {
+	name: "De Burger Beweging",
+	score: 0
+	}, {
+	name: "Piratenpartij",
+	score: 0
+  }, {
+	name: "Artikel 1",
+	score: 0
+  }, {
+	name: "50Plus",
+	score: 0
+  }, {
+	name: "Vrijzinnige Partij",
+	score: 0
+	}, {
+	name: "Libertarische Partij",
+	score: 0
+}];

@@ -72,6 +72,17 @@ h2 {
 
 ul {
   position: absolute;
+  top: 180px;
   height: 300px;
   width: 500px;
+}
+
+#selectParties {
+  position: absolute;
+  top: 200px;
+  left: 400px;
+}
+
+#bigPartiesButton {
+  
 }
