@@ -80,9 +80,21 @@ ul {
 #selectParties {
   position: absolute;
   top: 200px;
-  left: 400px;
+  left: 320px;
 }
 
 #bigPartiesButton {
-  
+  visibility: hidden;
+  position: absolute;
+  top: 80px;
+}
+#secularPartiesButton {
+  visibility: hidden;
+  position: absolute;
+  top: 200px;
+}
+#allPartiesButton {
+  visibility: hidden;
+  position: absolute;
+  top: 320px;
 }

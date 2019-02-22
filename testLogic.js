@@ -37,11 +37,15 @@ function skip() {
 
 function endScreen() {
 	if (questionsAnswered == 11) {
-			document.getElementById('title').innerHTML = "Uw partijen zijn:";
+			document.getElementById('title').innerHTML = "Kies uw favoriete partijen:";
 			document.getElementById('voteButtons').style.visibility = "hidden";
 			document.getElementById('statement').style.visibility = "hidden";
+			document.getElementById('bigPartiesButton').style.visibility = "visible";
+			document.getElementById('secularPartiesButton').style.visibility = "visible";
+			document.getElementById('allPartiesButton').style.visibility = "visible";
 			var mainId = document.getElementsByClassName('main');
 			mainId[0].style.height = "700px";
+			mainId[0].style.width = "470px";
 //			var bigParties = document.createElement('BUTTON');
 //			document.body.appendChild(bigParties);
 //			bigParties.id = "bigPartiesButton";
@@ -70,12 +74,45 @@ function goBack() {
          }
 }
 
-/*
-parties.forEach(function(element){
-	document.getElementById('statement').innnerHTML = element;
-});
+function sortBigParties() {
+	var bigParties = [];
+	for (let i = 0; i < parties.length; i++) {
+		if (parties[i].size >= 1) {
+			bigParties.push(parties[i].name);
+		}
+	}
+	list.innerHTML = "";
+	for (let i = 0; i < bigParties.length; i++) {
+		var partiesList = document.createElement('li');
+		partiesList.innerText = parties[i].name;
+		list.appendChild(partiesList);
+	}
+}
+function sortSecularParties() {
+	list.innerHTML = "";
 
-*/
+	var secularParties = [];
+	for (var i = 0; i < parties.length; i++) {
+		if (parties[i].secular == true) {
+			secularParties.push(parties[i].name);
+		}
+	}
+	for (let i = 0; i < secularParties.length; i++) {
+		var partiesList = document.createElement('li');
+		partiesList.innerText = parties[i].name;
+		list.appendChild(partiesList);
+	}
+}
+function viewAllParties() {
+	list.innerHTML = "";
+
+	for (let i = 0; i < parties.length; i++) {
+		var partiesList = document.createElement('li');
+		partiesList.innerText = parties[i].name;
+		list.appendChild(partiesList);
+	}
+}
+
 
 var results = [{
 	name: "VVD",
