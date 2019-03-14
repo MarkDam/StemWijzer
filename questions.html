@@ -23,15 +23,17 @@
       </div>
 
       <div id="voteButtons">
-        <button class="voteButton" type="button" name="button" onclick="pro()">Eens</button>
-        <button class="voteButton" type="button" name="button" onclick="contra()">Oneens</button>
-        <button class="voteButton" type="button" name="button" onclick="neither()">Geen van beide</button>
-        <button class="voteButton" type="button" name="button" onclick="skip()">Overslaan</button>
+        <button class="voteButton" type="button" name="button" onclick="answer('pro')">Eens</button>
+        <button class="voteButton" type="button" name="button" onclick="answer('contra')">Oneens</button>
+        <button class="voteButton" type="button" name="button" onclick="answer('neither')">Geen van beide</button>
+        <button class="voteButton" type="button" name="button" onclick="answer('skip')">Overslaan</button>
         <input type="checkbox" name="" value="">
       </div>
 
 
       <button id="reverseButton" type="button" name="button" onclick="goBack()">Terug</button>
+
+      <button id="goToOutcome" type="button" name="button" onclick="theOutcome()">De uitslag</button>
 
       <a href="index.html">
       <button id="homeButton" type="button" name="button">Home</button>

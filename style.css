@@ -50,7 +50,16 @@ h2 {
 #homeButton {
   position: absolute;
   bottom: 20px;
-  left: 20px;
+  right: 20px;
+  font-size: 20px;
+  height: 35px;
+}
+
+#goToOutcome {
+  visibility: hidden;
+  position: absolute;
+  bottom: 20px;
+  left: 190px;
   font-size: 20px;
   height: 35px;
 }
@@ -58,7 +67,7 @@ h2 {
 #reverseButton {
   position: absolute;
   bottom: 20px;
-  right: 20px;
+  left: 20px;
   font-size: 20px;
   height: 35px;
 }
